@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+@media screen and (max-width: 449px){
+    .container {
+        height: 100vh;
+    }    
+ }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor0:#e0c3fc;
+    --cor1:#8ec5fc; 
+    --cor2:#534a6d;
+}
+
+body {
+    background-image: linear-gradient(120deg, var(--cor0) 0%, var(--cor1) 100%);
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+h2{
+    text-align: center;
+    font-weight: 500;
+    color:var(--cor2);
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
+}
+
+p{
+  padding-top: 10px;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
+  
+}
+
+h3.welcome{
+   margin-top: 80px;
+   color: var(--cor2);
+   font-size: 0.9em;
+   padding-bottom: 2px;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
+}
+
+h3.invited{
+   color: var(--cor2);
+   font-size: 0.9em;
+   padding-bottom: 2px;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
+}
+
+main.container{
+    background-color: white;
+    gap: 15px;
+    padding: 30px;
+    width: 450px;
+    min-height: 60vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.151);
+
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.425);
+    font-style: italic;
+}
+
+input{
+    padding: 6px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(85, 85, 85, 0.151);
+}
+
+/*this will first erase the shadow/border when you are focusing/selecting the input, then the last line will put a light colored border*/
+input:focus-within{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 1px solid var(--cor0);
+}
+
+button{
+    width: 100%;
+    padding: 9px;
+    font-size: 0.9em;
+    font-weight: 300;
+    background-image: linear-gradient(120deg, var(--cor0) 0%, var(--cor1) 100%);
+    color:white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0px solid var(--cor1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+button:hover{
+    letter-spacing: 0.5px;
+}
+
+footer.check-verification h3{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
+}
+
+footer.check-verification {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.055);   
+}
+
+label{
+    font-size: 0.9em;
+}

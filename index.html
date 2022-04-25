@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/baloon-icon.png" type="image/png">
+    <title>Check if you were invited</title>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h2>Guests</h2>
+            <p>Check below if your name is on the list.</p>
+        </header>
+        
+        <form action="">
+            <div>
+                <h3 class="welcome" >Welcome:</h3>
+                <input type="text" autocomplete="off" id='name' placeholder="Type your name">
+                <h3 class="invited">Who invited you?</h3>
+                <input type="text" autocomplete="off" id='invited-by' placeholder="Type the person's name">
+            </div>    
+        </form>
+        <div>
+            <button onclick="verifyCheckin()">Click here to check it</button>
+        </div>
+       
+        <footer class="check-verification">
+            <h3>Are you invited?</h3>
+            <label for="" id='invitedChecking'>Checking...</label>
+        </footer>
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>
