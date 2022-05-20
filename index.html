@@ -12,25 +12,21 @@
 <body>
     <main class="container">
         <header>
-            <h2>Guests</h2>
-            <p>Check below if your name is on the list.</p>
+            <h1 class="container-title">Guests</h1>
+            <p class="simple-text">Check below if your name is on the list.</p>
         </header>
-        
-        <form action="">
-            <div>
-                <h3 class="welcome" >Welcome:</h3>
-                <input type="text" autocomplete="off" id='name' placeholder="Type your name">
-                <h3 class="invited">Who invited you?</h3>
-                <input type="text" autocomplete="off" id='invited-by' placeholder="Type the person's name">
-            </div>    
+        <form>
+            <h3 class="input-title">Welcome:</h3>
+            <input type="text" autocomplete="off" id="name" placeholder="Type your name">
+            <h3 class="input-title">Person who invited you:</h3>
+            <input type="text" autocomplete="off" id="invited-by" placeholder="Type their name">
         </form>
-        <div>
-            <button onclick="verifyCheckin()">Click here to check it</button>
-        </div>
-       
+        <div class="button-container">
+            <button onclick="verifyCheckin()">CHECK IT!</button>
+        </div>   
         <footer class="check-verification">
             <h3>Are you invited?</h3>
-            <label for="" id='invitedChecking'>Checking...</label>
+            <p class="simple-text" id='invitedChecking'>Checking...</p>
         </footer>
     </main>
 <script src="script.js"></script>

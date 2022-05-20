@@ -6,132 +6,106 @@
     }    
  }
 
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 :root{
-    --cor0:#e0c3fc;
+    --cor0:#D8ABFF;
     --cor1:#8ec5fc; 
     --cor2:#534a6d;
+    --cor3:#696969;
 }
 
 body {
+    align-items: center;
     background-image: linear-gradient(120deg, var(--cor0) 0%, var(--cor1) 100%);
     background-repeat: no-repeat;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
     display: flex;
+    font-family: "Poppins", sans-serif;
     justify-content: center;
-    align-items: center;
-    width: 100%;
     min-height: 100vh;
 }
 
-
-h2{
-    text-align: center;
-    font-weight: 500;
-    color:var(--cor2);
-    font-size: 2em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
-}
-
-p{
-  padding-top: 10px;
-  text-align: center;
-  padding: 0px 10px;
-  font-size: 0.9em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
-  
-}
-
-h3.welcome{
-   margin-top: 80px;
-   color: var(--cor2);
-   font-size: 0.9em;
-   padding-bottom: 2px;
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
-}
-
-h3.invited{
-   color: var(--cor2);
-   font-size: 0.9em;
-   padding-bottom: 2px;
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.089);
-}
-
-main.container{
+.container{
     background-color: white;
-    gap: 15px;
-    padding: 30px;
-    width: 450px;
-    min-height: 60vh;
     border-radius: 5px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.151);
-
+    padding: 30px;
+    width: 450px;
 }
 
-input::placeholder{
-    color: rgba(0, 0, 0, 0.425);
-    font-style: italic;
+.container-title{
+    color:var(--cor2);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.simple-text{
+  color: var(--cor3);
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 5rem;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.input-title{
+   color: var(--cor2);
+   font-size: 1rem;
+   padding-bottom: 2px
 }
 
 input{
-    padding: 6px;
-    margin-top: -15px;
-    margin-bottom: 20px;
-    width: 100%;
     border-radius: 4px;
     border: 1px solid rgba(85, 85, 85, 0.151);
+    color: var(--cor3);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #696969b9;
+    font-size: 0.9rem;
 }
 
 /*this will first erase the shadow/border when you are focusing/selecting the input, then the last line will put a light colored border*/
 input:focus-within{
-    box-shadow: 0 0 0 0;
-    outline: 0;
     border: 1px solid var(--cor0);
+    outline: 0;
 }
 
 button{
-    width: 100%;
-    padding: 9px;
-    font-size: 0.9em;
-    font-weight: 300;
-    background-image: linear-gradient(120deg, var(--cor0) 0%, var(--cor1) 100%);
-    color:white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.144);
-    font-weight: bold;
+    background-color:var(--cor2);
     border-radius: 4px;
-    border: 0px solid var(--cor1);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    border: 0;
+    box-shadow: inset 0 0 0 0 var(--cor0);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    transition: ease-out .45s;
+    width: 100%;
 }
 
 button:focus{
-    box-shadow: 0 0 0 0;
     outline: 0;
 }
 
 button:hover{
-    letter-spacing: 0.5px;
+    box-shadow: inset 390px 0 0 0 var(--cor0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
-footer.check-verification h3{
-    margin-top: 70px;
-    text-align: center;
-    font-size: 1.2em;
+.check-verification h3{
     color: var(--cor2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.062);
-}
-
-footer.check-verification {
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.055);   
-}
-
-label{
-    font-size: 0.9em;
+    font-size: 1.25rem;
+    margin-top: 3.5rem;
+    text-align: center;  
 }
