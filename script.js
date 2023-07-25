@@ -1,6 +1,7 @@
 function verifyCheckin (){
     personName = document.getElementById ('name').value.toUpperCase();
-    namesInTheList = ['LUIZA', 'MARIA', 'GUILHERME', 'WILLIAN', 'ERICK', 'KELVI', 'EDUARDA', 'ANDREIA', 'ARIEL', 'LENI', 'JOY', 'FERNANDA', 'ROGER', 'GABRIEL', 'BIA','BEATRIZ', 'ISABELA', 'KAROL', 'FERNANDA', 'ISA', 'TATIANE', 'WELTON','JULIA', 'GABRIELA', 'AMANDA', 'MANDY', 'RAFAELLA', 'CAMILA', 'DAVI', 'YAGO', 'RHYAN', 'LILIAN', 'MESSI', 'NEYMAR']
+
+    namesInTheList = ['MARIA', 'GUILHERME', 'ROGER',  'ISABELA', 'ANA', 'TATIANE', 'WELTON', 'RAFAELLA', 'CAMILA', 'DAVI', 'YAGO', 'RHYAN', 'MESSI']
 
     if (namesInTheList.includes(personName)){
         document.getElementById('invitedChecking').innerText = 'You are invited!'
